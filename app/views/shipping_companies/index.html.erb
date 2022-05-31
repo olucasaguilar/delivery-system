@@ -1,5 +1,9 @@
 <h1>Transportadoras</h1>
 
-<% @shipping_companies.each do |sc| %>
-  <p>Nome Fantasia: <%= link_to sc.trade_name, sc %></p>
+<% if @shipping_companies.any? %>
+  <% @shipping_companies.each do |sc| %>
+    <p>Nome Fantasia: <%= link_to sc.trade_name, sc %></p>
+  <% end %>
+<% else %>
+  <p>Nenhuma transportadora cadastrada.</p>
 <% end %>

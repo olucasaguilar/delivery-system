@@ -11,7 +11,9 @@ describe 'Usuário visualiza transportadoras' do
     end
     # Assert
     expect(current_path).to eq shipping_companies_path
-    expect(page).to have_content('Transportadoras')
+    within('h1') do
+      expect(page).to have_content('Transportadoras')
+    end
   end
   
   it 'com sucesso' do
@@ -31,5 +33,17 @@ describe 'Usuário visualiza transportadoras' do
     # Assert
     expect(page).to have_content('Nome Fantasia: Express Delivery')
     expect(page).to have_content('Nome Fantasia: Rapid')
+  end
+
+  it 'e não há transportadoras cadastradas' do
+    # Arrange
+
+    # Act
+    visit root_path
+    within('nav') do
+      click_on 'Transportadoras'
+    end
+    # Assert
+    expect(page).to have_content 'Nenhuma transportadora cadastrada.'
   end
 end

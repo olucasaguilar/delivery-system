@@ -1,24 +1,46 @@
-# README
+# Sistema de Entregas
+## Sistema de entregas desenvolvido durante a 1ª etapa de treinamento do TreinaDev 8 (Campus Code).
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este projeto é de uma aplicação web responsável por gerencias meios de transporte disponíveis para e-commerces.
 
-Things you may want to cover:
+Foi desenvolvido em Ruby on Rails.
 
-* Ruby version
+### Versões
+- Ruby 3.0.0
+- Rails 7.0.2.4
 
-* System dependencies
+### Informações adicionais
+- Utilizado gems [RSpec](https://github.com/rspec/rspec-rails) e [Capybara](https://github.com/teamcapybara/capybara) para realização de testes, e banco de dados SQLite.
 
-* Configuration
+## Executando o projeto
+1. Clone o projeto
+  ```
+  git clone https://github.com/olucasaguilar/delivery-system.git
+  ```
+2. Entre na pasta e instale as dependências
+  ```
+  bundle install
+  ```
+3. Execute as migrações
+  ```
+  rails db:migrate
+  ```
+4. Adicione dados ao banco
+  ```
+  rails db:seed
+  # Os dados podem ser acessados no arquivo db/seeds.rb
+  ```
+5. Inicie o servidor web
+  ```
+  rails server
+  ```
 
-* Database creation
+## Executando os testes
+  ```
+  rspec
+  ```
 
-* Database initialization
+## Tabela de Planejamento
+Criado utilizando Notion:
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[Link externo (Notion)](https://aged-toque-5ce.notion.site/Tabela-de-Planejamento-452e2546f0494f1fac803f2e62b8be1e)

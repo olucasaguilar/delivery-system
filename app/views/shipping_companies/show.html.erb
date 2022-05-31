@@ -1,0 +1,17 @@
+<h1>Transportadora: <%= @shipping_company.legal_name %></h1>
+<h2><%= @shipping_company.trade_name %></h2>
+
+<dl>
+  <dt>Razão social:</dt>
+  <dd><%= @shipping_company.legal_name %></dd>
+  <dt>Nome fantasia:</dt>
+  <dd><%= @shipping_company.trade_name %></dd>
+  <dt>Domínio dos e-mails:</dt>
+  <dd><%= @shipping_company.domain_name %></dd>
+  <dt>CNPJ:</dt>
+  <dd><%= @shipping_company.cnpj %></dd>
+  <dt>Endereço faturamento:</dt>
+  <dd><%= @shipping_company.billing_address %></dd>
+  <dt>Status:</dt>
+  <dd><%= @shipping_company.active %></dd>
+</dl>

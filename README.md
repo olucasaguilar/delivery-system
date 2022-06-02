@@ -1,4 +1,4 @@
-# Sistema de Entregas
+# Sistema de Entregas (em desenvolvimento)
 ## Sistema de entregas desenvolvido durante a 1ª etapa de treinamento do TreinaDev 8 (Campus Code).
 
 Este projeto é de uma aplicação web responsável por gerencias meios de transporte disponíveis para e-commerces.
